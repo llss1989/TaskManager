@@ -7,7 +7,14 @@ FactoryBot.define do
     description
     author_id { 1 }
     assignee_id { 1 }
-    state { "MyString" }
-    expired_at { "2022-10-20" }
+    state { ""}
+    expired_at { "#{time_rand}" }
   end
 end
+
+
+def time_rand from = 0.0, to = Time.now
+  Time.at(from + rand * (to.to_f - from.to_f)).to_s.split('')[0, 10].join()
+end
+
+
