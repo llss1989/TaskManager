@@ -1,10 +1,12 @@
+require 'faker'
+
 FactoryBot.define do
   factory :user do
-    first_name
-    last_name
-    password
-    email
-    avatar
+    first_name { Faker::Name.name }
+    last_name { Faker::Name.last_name }
+    password { Faker::Books::Dune.planet }
+    email { Faker::Internet.email }
+    avatar { Faker::Avatar.image }
     type { '' }
 
     factory :developer do
