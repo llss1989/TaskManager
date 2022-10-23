@@ -1,10 +1,12 @@
+require 'faker'
+
 FactoryBot.define do
   factory :task do
-    name
-    description
-    author_id { 1 }
-    assignee_id { 1 }
+    name { Faker::DcComics.name}
+    description {Faker::DcComics.title}
+    association :author, factory: :manager
+    association :assignee, factory: :manager
     state { '' }
-    expired_at
+    expired_at {Faker::Date.birthday(min_age: 18, max_age: 65)}
   end
 end
