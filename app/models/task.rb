@@ -14,22 +14,19 @@ class Task < ApplicationRecord
     state :ready_for_release
     state :released
 
-    event :start do
-      transition new_task: :in_development
+    event :start_development do
+      transition [ new_task, :in_qa, :in_code_review]: :in_development
     end
 
-    event :test_code do
+    event :start_testing do
       transition in_development: :in_qa
     end
 
     event :review do
       transition in_qa: :in_code_review
     end
-    event :back_to_development do
-      transition [:in_qa, :in_code_review] => :in_development
-    end
-
-    event :ready_for_release_or_not do
+ 
+    event :ready_for_release do
       transition in_code_review: :ready_for_release
     end
 
