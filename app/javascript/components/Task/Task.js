@@ -10,7 +10,6 @@ import useStyles from './useStyles.js';
 
 function Task({ task }) {
   const styles = useStyles();
-
   return (
     <Card className={styles.root}>
       <CardHeader title={task.name} />

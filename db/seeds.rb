@@ -19,3 +19,12 @@ admin.save
   u.password = Faker::Books::Dune.planet
   u.save
 end
+
+300.times do |i|
+  t = Task.create()
+  t.name = Faker::Movie.title
+  t.description = Faker::Movie.quote
+  t.author_id = (1..60).to_a.sample
+  t.state = ['new_task','in_development','in_qa','in_code_review','ready_for_release','released','archived'].sample
+  t.save
+end
