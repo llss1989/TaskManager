@@ -5,6 +5,10 @@ import { propOr } from 'ramda';
 import Task from 'components/Task';
 import TasksRepository from 'repositories/TasksRepository';
 import ColumnHeader from '../ColumnHeader/ColumnHeader';
+import { Fab, AddIcon } from '@mui/material/Fab';
+import useStyles from './useStyles';
+
+const styles = useStyles();
 
 const STATES = [
   { key: 'new_task', value: 'New' },
@@ -86,13 +90,18 @@ function TaskBoard() {
       });
   };
   return (
-    <KanbanBoard
-      renderColumnHeader={(column) => <ColumnHeader column={column} onLoadMore={loadColumnMore} />}
-      renderCard={(card) => <Task task={card} />}
-      onCardDragEnd={handleCardDragEnd}
-    >
-      {board}
-    </KanbanBoard>
+    <div>
+      <Fab className={styles.addButton} color="primary" aria-label="add">
+        <AddIcon />
+      </Fab>
+      <KanbanBoard
+        renderColumnHeader={(column) => <ColumnHeader column={column} onLoadMore={loadColumnMore} />}
+        renderCard={(card) => <Task task={card} />}
+        onCardDragEnd={handleCardDragEnd}
+      >
+        {board}
+      </KanbanBoard>
+    </div>
   );
 }
 
