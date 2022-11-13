@@ -3,16 +3,16 @@ import qs from 'qs';
 
 import { camelize, decamelize } from './keysConverter.js';
 
-// function authenticityToken() {
-//   const token = document.querySelector('meta[name="csrf-token"]');
-//   return token ? token.content : null;
-// }
+function authenticityToken() {
+  const token = document.querySelector('meta[name="csrf-token"]');
+  return token ? token.content : null;
+}
 
 function headers() {
   return {
     Accept: '*/*',
     'Content-Type': 'application/json',
-    // 'X-CSRF-Token': authenticityToken(),
+    'X-CSRF-Token': authenticityToken(),
     'X-Requested-With': 'XMLHttpRequest',
   };
 }
@@ -42,22 +42,21 @@ export default {
         params: decamelize(params),
         paramsSerializer: { serialize: (parameters) => qs.stringify(parameters, { encode: false }) },
       })
-      .then((response) => ({
-        ...response,
-        data: camelize(response.data),
-      }));
+      .then(camelize);
   },
 
   post(url, json) {
     const body = decamelize(json);
 
-    return axios.post(url, body).then((response) => ({
-      ...response,
-      data: camelize(response.data),
-    }));
+    return axios.post(url, body).then(camelize);
   },
 
-  put(url, json) {},
-
-  delete(url, json) {},
+  put(url, json) {
+    const body = decamelize(json);
+    return axios.put(url, body).then(camelize);
+  },
+  delete(url, json) {
+    const body = decamelize(json);
+    return axios.destroy(url, body);
+  },
 };
