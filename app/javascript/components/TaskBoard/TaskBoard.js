@@ -5,6 +5,7 @@ import { propOr } from 'ramda';
 import Task from 'components/Task';
 import TasksRepository from 'repositories/TasksRepository';
 import ColumnHeader from '../ColumnHeader/ColumnHeader';
+import { TableSortLabel } from '@material-ui/core';
 
 const STATES = [
   { key: 'new_task', value: 'New' },
@@ -71,10 +72,25 @@ function TaskBoard() {
       }));
     });
   };
+  const handleCardDragEnd = (task, source, destination) => {
+    const transition = task.transitions.find(({ to }) => destination.toColumnId === to);
+    if (!transition) {
+      return null;
+    }
+    return TasksRepository.update(task.id, { id: task.id, task: { stateEvent: transition.event } })
+      .then(() => {
+        loadColumnInitial(destination.toColumnId);
+        loadColumnInitial(source.fromColumnId);
+      })
+      .catch((error) => {
+        alert(`Move failed! ${error.message}`);
+      });
+  };
   return (
     <KanbanBoard
       renderColumnHeader={(column) => <ColumnHeader column={column} onLoadMore={loadColumnMore} />}
       renderCard={(card) => <Task task={card} />}
+      onCardDragEnd={handleCardDragEnd}
     >
       {board}
     </KanbanBoard>
