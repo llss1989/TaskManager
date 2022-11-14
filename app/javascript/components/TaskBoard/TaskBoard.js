@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import KanbanBoard from '@asseinfo/react-kanban';
 import { propOr } from 'ramda';
 
-import Task from 'components/Task';
-import TasksRepository from 'repositories/TasksRepository';
+import Task from '../Task';
+import TasksRepository from '../../repositories/TasksRepository';
 import ColumnHeader from '../ColumnHeader/ColumnHeader';
-import { Fab, AddIcon } from '@mui/material/Fab';
+import { Fab } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
+import AddPopup from '../AddPopup';
+import TaskForm from '../../forms/TaskForm';
 import useStyles from './useStyles';
-
-const styles = useStyles();
 
 const STATES = [
   { key: 'new_task', value: 'New' },
@@ -19,6 +20,11 @@ const STATES = [
   { key: 'released', value: 'Released' },
   { key: 'archived', value: 'Archived' },
 ];
+
+const MODES = {
+  ADD: 'add',
+  NONE: 'none',
+};
 
 const initialBoard = {
   columns: STATES.map((column) => ({
@@ -32,9 +38,10 @@ const initialBoard = {
 function TaskBoard() {
   const [board, setBoard] = useState(initialBoard);
   const [boardCards, setBoardCards] = useState([]);
+  const [mode, setMode] = useState(MODES.NONE);
   useEffect(() => loadBoard(), []);
   useEffect(() => generateBoard(), [boardCards]);
-
+  const styles = useStyles();
   const loadColumn = (state, page, perPage) =>
     TasksRepository.index({
       q: { stateEq: state },
@@ -89,9 +96,29 @@ function TaskBoard() {
         alert(`Move failed! ${error.message}`);
       });
   };
+  const handleAddPopupOpen = () => {
+    setMode(MODES.ADD);
+  };
+
+  const handleClose = () => {
+    setMode(MODES.NONE);
+  };
+  const handleTaskCreate = (params) => {
+    const attributes = TaskForm.attributesToSubmit(params);
+    return TasksRepository.create({ task: attributes }).then(({ data: { task } }) => {
+      loadColumn(task.state, 1, 10).then(({ data }) => {
+        setBoardCards((prevState) => ({
+          ...prevState,
+          [task.state]: { cards: data.items, meta: data.meta },
+        }));
+        setMode(MODES.NONE);
+      });
+    });
+  };
   return (
     <div>
-      <Fab className={styles.addButton} color="primary" aria-label="add">
+      {mode === MODES.ADD && <AddPopup onCardCreate={handleTaskCreate} onClose={handleClose} />}
+      <Fab className={styles.addButton} color="primary" aria-label="add" onClick={handleAddPopupOpen}>
         <AddIcon />
       </Fab>
       <KanbanBoard

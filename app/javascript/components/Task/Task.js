@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import useStyles from './useStyles.js';
 
+
 function Task({ task }) {
   const styles = useStyles();
   return (
