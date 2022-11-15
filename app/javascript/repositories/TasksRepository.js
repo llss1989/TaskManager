@@ -1,4 +1,4 @@
-import routes from '../routes';
+import routes from 'routes';
 import FetchHelper from '../../../utils/fetchHelper.js';
 
 export default {
@@ -24,6 +24,6 @@ export default {
 
   destroy(id) {
     const path = routes.apiV1TaskPath(id);
-    return fetchHelper.delete(path);
+    return FetchHelper.delete(path);
   },
 };
