@@ -7,7 +7,7 @@ import TasksRepository from '../../repositories/TasksRepository';
 import ColumnHeader from '../ColumnHeader/ColumnHeader';
 import { Fab } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
-import AddPopup from '../AddPopup';
+import AddPopup from 'components/AddPopup';
 import TaskForm from '../../forms/TaskForm';
 import EditPopup from '../EditPopup';
 import useStyles from './useStyles';
