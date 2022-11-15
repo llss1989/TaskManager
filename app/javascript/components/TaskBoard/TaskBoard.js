@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import KanbanBoard from '@asseinfo/react-kanban';
 import { propOr } from 'ramda';
 
-import Task from '../Task';
-import TasksRepository from '../../repositories/TasksRepository';
-import ColumnHeader from '../ColumnHeader/ColumnHeader';
+import Task from 'components/Task';
+import TasksRepository from 'repositories/TasksRepository';
+import ColumnHeader from 'components/ColumnHeader/ColumnHeader';
 import { Fab } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import AddPopup from 'components/AddPopup';
 import TaskForm from 'forms/TaskForm';
-import EditPopup from '../EditPopup';
+import EditPopup from 'components/EditPopup';
 import useStyles from './useStyles';
 
 const STATES = [
