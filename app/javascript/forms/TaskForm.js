@@ -18,4 +18,10 @@ export default {
       authorId: propOr(null, 'id', task.author),
     };
   },
+  attributesToDestroy(task) {
+    const pertmittedKeys = ['id'];
+    return {
+      ...pick(pertmittedKeys, task),
+    };
+  },
 };

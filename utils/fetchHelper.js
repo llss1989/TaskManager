@@ -37,7 +37,6 @@ axios.interceptors.response.use(null, (error) => {
 
 export default {
   get(url, params = {}) {
-    console.log(decamelize(params));
     return axios
       .get(url, {
         params: decamelize(params),
@@ -57,6 +56,6 @@ export default {
   },
   delete(url, json) {
     const body = decamelize(json);
-    return axios.destroy(url, body);
+    return axios.delete(url, body).then(camelize);
   },
 };
