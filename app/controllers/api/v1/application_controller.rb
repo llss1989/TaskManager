@@ -19,11 +19,11 @@ class Api::V1::ApplicationController < Api::ApplicationController
   end
 
   def ransack_params
-    # state_is_new_task = params.to_unsafe_h['q']['state_eq'] == 'new_task'
+
     if params.has_value?("state_eq"=>"new_task")
       {"state_eq"=>"new_task", s: RANSACK_DEFAULT_SORT}
     else
-      params.to_unsafe_h.fetch(:q,  nil )
+      params.to_unsafe_h.fetch(:q,  s: RANSACK_DEFAULT_SORT )
     end
   end
 
