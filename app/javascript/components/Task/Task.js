@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { IconButton } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
-import useStyles from './useStyles.js';
+import useStyles from './useStyles';
 
 function Task({ task, onClick }) {
   const styles = useStyles();

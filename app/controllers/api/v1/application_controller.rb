@@ -2,7 +2,7 @@ class Api::V1::ApplicationController < Api::ApplicationController
   respond_to :json
   include AuthHelper
   helper_method :current_user
-  RANSACK_DEFAULT_SORT = 'id desc'
+  RANSACK_DEFAULT_SORT = 'id asc'
 
   def self.responder
     JsonResponder
@@ -20,9 +20,9 @@ class Api::V1::ApplicationController < Api::ApplicationController
 
   def ransack_params
     if params.has_value?('state_eq' => 'new_task')
-      { 'state_eq' => 'new_task', s: RANSACK_DEFAULT_SORT }
+      { 'state_eq' => 'new_task', s: 'id desc' }
     else
-      params.to_unsafe_h.fetch(:q, s: RANSACK_DEFAULT_SORT)
+      params.to_unsafe_h.fetch(:q, nil )
     end
   end
 

@@ -8,7 +8,7 @@ import Rails from '@rails/ujs';
 import * as ActiveStorage from '@rails/activestorage';
 import 'channels';
 import WebpackerReact from 'webpacker-react';
-import TaskBoard from 'components/TaskBoard/index.js';
+import TaskBoard from 'components/TaskBoard/index';
 
 Rails.start();
 ActiveStorage.start();
