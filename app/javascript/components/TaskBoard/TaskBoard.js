@@ -80,6 +80,7 @@ function TaskBoard() {
   const loadBoard = () => {
     STATES.map(({ key }) => loadColumnInitial(key));
   };
+
   const loadColumnMore = (state, page = 1, perPage = 10) => {
     loadColumn(state, page, perPage).then(({ data }) => {
       setBoardCards((prevState) => ({
@@ -88,6 +89,7 @@ function TaskBoard() {
       }));
     });
   };
+
   const handleCardDragEnd = (task, source, destination) => {
     const transition = task.transitions.find(({ to }) => destination.toColumnId === to);
     if (!transition) {
