@@ -19,11 +19,11 @@ class Api::V1::ApplicationController < Api::ApplicationController
   end
 
   def ransack_params
-    if params.has_value?('state_eq' => 'new_task')
-      { 'state_eq' => 'new_task', s: 'id desc' }
-    else
-      params.to_unsafe_h.fetch(:q, nil )
+    q = params.to_unsafe_h.fetch(:q, { s: RANSACK_DEFAULT_SORT })
+    if !q.include?('s')
+      q['s'] = 'id desc'
     end
+    q
   end
 
   def page
