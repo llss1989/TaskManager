@@ -11,7 +11,10 @@ admin = Admin.find_or_create_by(first_name: 'admin', last_name: 'admin', email: 
 admin.password = 'admin'
 admin.save
 
-60.times do |i|
+number_of_users = 60
+number_of_tasks = 300
+
+number_of_users.times do |i|
   u = [Manager, Developer].sample.new
   u.email = Faker::Internet.email
   u.first_name =  Faker::Name.name
@@ -20,7 +23,7 @@ admin.save
   u.save
 end
 
-300.times do |i|
+number_of_users.times do |i|
   t = Task.create()
   t.name = Faker::Movie.title
   t.description = Faker::Movie.quote
