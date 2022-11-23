@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { has } from 'ramda';
 
 import TextField from '@material-ui/core/TextField';
-
+import TaskPresenter from 'presenters/TaskPresenter';
+import UserSelect from 'components/UserSelect/UserSelect';
 import useStyles from './useStyles';
 
 function Form({ errors, onChange, task }) {
@@ -16,7 +17,7 @@ function Form({ errors, onChange, task }) {
         error={has('name', errors)}
         helperText={errors.name}
         onChange={handleChangeTextField('name')}
-        value={task.name}
+        value={TaskPresenter.getName(task)}
         label="Name"
         required
         margin="dense"
