@@ -11,6 +11,7 @@ import AddPopup from 'components/AddPopup';
 import TaskForm from 'forms/TaskForm';
 import EditPopup from 'components/EditPopup';
 import useStyles from './useStyles';
+import TaskPresenter from 'presenters/TaskPresenter';
 
 const STATES = [
   { key: 'new_task', value: 'New' },
@@ -95,7 +96,7 @@ function TaskBoard() {
     if (!transition) {
       return null;
     }
-    return TasksRepository.update(task.id, { id: task.id, task: { stateEvent: transition.event } })
+    return TasksRepository.update(TaskPresenter.id(task), { id: TaskPresenter.id(task), task: { stateEvent: transition.event } })
       .then(() => {
         loadColumnInitial(destination.toColumnId);
         loadColumnInitial(source.fromColumnId);
@@ -114,10 +115,10 @@ function TaskBoard() {
   const handleTaskCreate = (params) => {
     const attributes = TaskForm.attributesToSubmit(params);
     return TasksRepository.create({ task: attributes }).then(({ data: { task } }) => {
-      loadColumn(task.state, 1, 10).then(({ data }) => {
+      loadColumn(TaskPresenter.state(task), 1, 10).then(({ data }) => {
         setBoardCards((prevState) => ({
           ...prevState,
-          [task.state]: { cards: data.items, meta: data.meta },
+          [TaskPresenter.state(task)]: { cards: data.items, meta: data.meta },
         }));
         setMode(MODES.NONE);
       });
@@ -128,21 +129,21 @@ function TaskBoard() {
   const handleTaskUpdate = (task) => {
     const attributes = TaskForm.attributesToSubmit(task);
 
-    return TasksRepository.update(task.id, attributes).then(() => {
-      loadColumnInitial(task.state);
+    return TasksRepository.update(TaskPresenter.id(task), attributes).then(() => {
+      loadColumnInitial(TaskPresenter.state(task));
       handleClose();
     });
   };
 
   const handleTaskDestroy = (task) => {
     const attributes = TaskForm.attributesToDestroy(task);
-    return TasksRepository.destroy(task.id, attributes).then(() => {
-      loadColumnInitial(task.state);
+    return TasksRepository.destroy(TaskPresenter.id(task), attributes).then(() => {
+      loadColumnInitial(TaskPresenter.state(task));
       handleClose();
     });
   };
   const handleEditPopupOpen = (task) => {
-    setOpenedTaskId(task.id);
+    setOpenedTaskId(TaskPresenter.id(task));
     setMode(MODES.EDIT);
   };
 
