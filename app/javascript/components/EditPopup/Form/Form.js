@@ -17,7 +17,7 @@ function Form({ errors, onChange, task }) {
         error={has('name', errors)}
         helperText={errors.name}
         onChange={handleChangeTextField('name')}
-        value={TaskPresenter.getName(task)}
+        value={TaskPresenter.name(task)}
         label="Name"
         required
         margin="dense"
