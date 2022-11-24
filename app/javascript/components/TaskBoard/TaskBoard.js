@@ -96,7 +96,10 @@ function TaskBoard() {
     if (!transition) {
       return null;
     }
-    return TasksRepository.update(TaskPresenter.id(task), { id: TaskPresenter.id(task), task: { stateEvent: transition.event } })
+    return TasksRepository.update(TaskPresenter.id(task), {
+      id: TaskPresenter.id(task),
+      task: { stateEvent: transition.event },
+    })
       .then(() => {
         loadColumnInitial(destination.toColumnId);
         loadColumnInitial(source.fromColumnId);
