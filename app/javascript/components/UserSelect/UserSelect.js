@@ -26,11 +26,7 @@ function UserSelect({ error, label, isClearable, isDisabled, isRequired, onChang
           loadOptions={handleLoadOptions}
           defaultOptions
           getOptionLabel={(user) => UserPresenter.fullName(user)}
-<<<<<<< HEAD
           getOptionValue={(user) => UserPresenter.id(user)}
-=======
-          getOptionValue={(user) => user.id}
->>>>>>> use presenters in components
           isDisabled={isDisabled}
           isClearable={isClearable}
           defaultValue={value}

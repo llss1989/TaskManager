@@ -58,15 +58,11 @@ function EditPopup({ cardId, onClose, onCardDestroy, onCardLoad, onCardUpdate })
               <CloseIcon />
             </IconButton>
           }
-<<<<<<< HEAD
           title={
             isLoading
               ? 'Your task is loading. Please be patient.'
               : `Task # ${TaskPresenter.id(task)} [${TaskPresenter.name(task)}]`
           }
-=======
-          title={isLoading ? 'Your task is loading. Please be patient.' : `Task # ${task.id} [${TaskPresenter.getName(task)}]`}
->>>>>>> use presenters in components
         />
         <CardContent>
           {isLoading ? (
