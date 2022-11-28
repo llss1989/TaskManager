@@ -24,4 +24,4 @@ Things you may want to cover:
 * ...
 
 
-[![.github/workflows/docker-compose.ci.yml](https://github.com/llss1989/taskmanager/actions/workflows/docker-compose.ci.yml/badge.svg?branch=develop)](https://github.com/llss1989/taskmanager/actions/workflows/docker-compose.ci.yml)
+[![Main](https://github.com/llss1989/taskmanager/actions/workflows/main.yml/badge.svg)](https://github.com/llss1989/taskmanager/actions/workflows/main.yml)
