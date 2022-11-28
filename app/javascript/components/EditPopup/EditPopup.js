@@ -20,7 +20,6 @@ function EditPopup({ cardId, onClose, onCardDestroy, onCardLoad, onCardUpdate })
   const [isSaving, setSaving] = useState(false);
   const [errors, setErrors] = useState({});
   const styles = useStyles();
-
   useEffect(() => {
     onCardLoad(cardId).then(setTask);
   }, []);

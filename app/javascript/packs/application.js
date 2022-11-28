@@ -8,9 +8,10 @@ import Rails from '@rails/ujs';
 import * as ActiveStorage from '@rails/activestorage';
 import 'channels';
 import WebpackerReact from 'webpacker-react';
-import TaskBoard from 'components/TaskBoard';
+// import TaskBoard from 'components/TaskBoard';
+import App from '../App';
 
 Rails.start();
 ActiveStorage.start();
 
-WebpackerReact.setup({ TaskBoard });
+WebpackerReact.setup({ App });
