@@ -1,12 +1,8 @@
 name: Main
 
 on:
-  pull_request:
-    branches:
-      - 'develop'
-  push:
-    branches:
-      - 'develop'
+  - push
+  - pull_request
 
 jobs:
   build:
