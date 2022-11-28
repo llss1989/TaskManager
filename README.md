@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+[![.github/workflows/docker-compose.ci.yml](https://github.com/llss1989/taskmanager/actions/workflows/docker-compose.ci.yml/badge.svg?branch=develop)](https://github.com/llss1989/taskmanager/actions/workflows/docker-compose.ci.yml)
