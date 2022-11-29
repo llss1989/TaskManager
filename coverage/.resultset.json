@@ -1,6 +1,359 @@
 {
   "Minitest": {
     "coverage": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/environments/test.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/active_model_serializer.rb": {
+        "lines": [
+          1
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/application_controller_renderer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/assets.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/backtrace_silencers.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/content_security_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/cookies_serializer.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          1
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/mime_types.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/permissions_policy.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/simple_form_materialize.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/initializers/wrap_parameters.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/factories/tasks.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/factories/users.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/config/routes.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/concerns/auth_helper.rb": {
         "lines": [
           1,
@@ -23,6 +376,59 @@
           1,
           0,
           null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/admin/users_controller_test.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
           0,
           null,
           null
@@ -53,491 +459,208 @@
           null
         ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/jobs/application_job.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/api/v1/tasks_controller_test.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
           0,
           null,
           null,
           null,
+          0,
+          0,
+          null,
+          0,
+          0,
           null,
           null,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/web/developers_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/api/v1/users_controller_test.rb": {
         "lines": [
-          0,
+          1,
+          null,
+          1,
+          null,
+          1,
           0,
           0,
           0,
           null,
+          null,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/web/sessions_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/web/boards_controller_test.rb": {
         "lines": [
-          0,
-          0,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
           null,
+          null,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/web/application_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/web/developers_controller_test.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
           0,
           0,
+          null,
+          null,
+          1,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          null,
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/web/boards_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/controllers/web/sessions_controller_test.rb": {
         "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
+          null,
+          1,
           0,
           0,
+          null,
           0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/api/v1/tasks_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/models/admin_test.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/api/v1/users_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/models/developer_test.rb": {
         "lines": [
-          0,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/api/v1/application_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/models/manager_test.rb": {
         "lines": [
-          0,
-          0,
-          0,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/api/application_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/models/task_test.rb": {
         "lines": [
+          1,
+          null,
+          1,
+          1,
           0,
-          0
-        ],
-        "branches": {
-        }
+          0,
+          null,
+          null
+        ]
       },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/application_controller.rb": {
+      "/home/llss/Learning/dualbootTaskmanager/taskmanager/test/models/user_test.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/admin/users_controller.rb": {
-        "lines": [
-          0,
-          0,
+          1,
+          null,
+          1,
+          1,
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/controllers/admin/application_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/models/manager.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/models/developer.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/models/task.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/serializers/user_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/serializers/application_serializer.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/serializers/task_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/channels/application_cable/channel.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/responders/json_responder.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/llss/Learning/dualbootTaskmanager/taskmanager/app/forms/session_form.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null
+        ]
       }
     },
-    "timestamp": 1669737280
+    "timestamp": 1669738099
   }
 }

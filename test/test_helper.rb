@@ -1,7 +1,7 @@
 require 'simplecov'
 
 
-SimpleCov.start 'rails' do
+SimpleCov.start do
   if ENV['CI']
     require 'simplecov-lcov'
     SimpleCov::Formatter::LcovFormatter.config do |c|
@@ -11,8 +11,6 @@ SimpleCov.start 'rails' do
 
     formatter SimpleCov::Formatter::LcovFormatter
   end
-
-  add_filter %w[version.rb initializer.rb]
 end
 
 ENV['RAILS_ENV'] ||= 'test'

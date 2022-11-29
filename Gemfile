@@ -35,10 +35,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'state_machines'
 gem 'state_machines-activerecord'
-gem 'coveralls', require: false
-gem 'coveralls_reborn', '~> 0.25.0', require: false
-gem 'simplecov'
-gem 'simplecov-lcov', '~> 0.8.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,6 +49,8 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'coveralls_reborn', '~> 0.22.0'
+  gem 'simplecov-lcov', '~> 0.8.0'
 end
 
 group :test do
