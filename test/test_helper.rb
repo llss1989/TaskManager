@@ -1,4 +1,5 @@
 require 'simplecov'
+require 'simplecov-lcov'
 
 SimpleCov.start 'rails' do
   if ENV['CI']
