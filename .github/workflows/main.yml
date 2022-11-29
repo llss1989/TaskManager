@@ -18,10 +18,10 @@ jobs:
         run: ls
       - name: 'see'
         run: ls coverage -la
-      - name: Coveralls Parallel
-        uses: coverallsapp/github-action@master
       - name: 'see'
         run: ls app -la
+      - name: Coveralls Parallel
+        uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN  }}
           parallel: false
