@@ -35,8 +35,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'state_machines'
 gem 'state_machines-activerecord'
-gem 'simplecov', require: false, group: :test
-gem 'coveralls', require: false
+gem 'coveralls_reborn'
+gem 'simplecov-lcov', '~> 0.8.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
