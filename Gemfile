@@ -35,7 +35,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'state_machines'
 gem 'state_machines-activerecord'
-gem 'coveralls_reborn'
+gem 'coveralls', require: false
+gem 'coveralls_reborn', '~> 0.25.0', require: false
 gem 'simplecov'
 gem 'simplecov-lcov', '~> 0.8.0'
 
