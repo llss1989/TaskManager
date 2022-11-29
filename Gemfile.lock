@@ -322,6 +322,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   selenium-webdriver (>= 4.0.0.rc1)
   simple_form
+  simplecov
   simplecov-lcov (~> 0.8.0)
   slim-rails
   state_machines
