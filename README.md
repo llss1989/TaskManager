@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+[![Main](https://github.com/llss1989/taskmanager/actions/workflows/main.yml/badge.svg)](https://github.com/llss1989/taskmanager/actions/workflows/main.yml)
