@@ -3,6 +3,7 @@ require 'simplecov-lcov'
 
 SimpleCov.start 'rails' do
   if ENV['CI']
+    require 'simplecov'
     require 'simplecov-lcov'
 
     SimpleCov::Formatter::LcovFormatter.config do |c|
