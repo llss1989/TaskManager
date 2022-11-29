@@ -50,7 +50,6 @@ group :development do
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
   gem 'coveralls_reborn', '~> 0.22.0'
-  gem 'simplecov'
   gem 'simplecov-lcov', '~> 0.8.0'
 end
 
