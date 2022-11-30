@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-admin = Admin.find_or_create_by(first_name: 'admin', last_name: 'admin', email: 'admin@localhost')
+admin = Admin.find_or_create_by(first_name: 'admin', last_name: 'admin', email: 'admin@localhost.com')
 admin.password = 'admin'
 admin.save
 
 number_of_users = 60
-number_of_tasks = 300
+number_of_tasks = 600
 
 number_of_users.times do |i|
   u = [Manager, Developer].sample.new
