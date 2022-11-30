@@ -23,7 +23,7 @@ number_of_users.times do |i|
   u.save
 end
 
-number_of_users.times do |i|
+number_of_tasks.times do |i|
   t = Task.create()
   t.name = Faker::Movie.title
   t.description = Faker::Movie.quote
