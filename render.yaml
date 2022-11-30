@@ -1,11 +1,11 @@
 databases:
-    plan: free
   - name: task-manager-db
+    plan: free
     databaseName: taskmanager_db_1
 
 services:
-    plan: free
   - type: web
+    plan: free
     name: mysite
     env: ruby
     buildCommand: "./bin/render-build.sh"
