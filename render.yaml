@@ -1,7 +1,6 @@
 databases:
   - name: task-manager-db
     databaseName: taskmanager_db_1
-    user: llss
 
 services:
   - type: web
