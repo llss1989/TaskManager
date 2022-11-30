@@ -14,14 +14,8 @@ jobs:
           COVERAGE: true
           RAILS_ENV: test
         run: docker-compose --file docker-compose.ci.yml run ci
-      - name: 'see'
-        run: ls
-      - name: 'see'
-        run: ls coverage -la
-      - name: 'see'
-        run: ls app -la
-      - name: Coveralls Parallel
+
+      - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN  }}
-          parallel: false
+          github-token: ${{ secrets.GITHUB_TOKEN }}
