@@ -18,8 +18,9 @@ jobs:
           COVERAGE: true
           RAILS_ENV: test
         run: docker-compose --file docker-compose.ci.yml run ci
-      
-      - name: Coveralls
+    
+      - name: Coveralls Parallel
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.COVERALLS_SECRET }}
+          parallel: false
