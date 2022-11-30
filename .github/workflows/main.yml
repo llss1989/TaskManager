@@ -1,8 +1,12 @@
 name: Main
 
 on:
-  - push
-  - pull_request
+  pull_request:
+    branches:
+      - 'develop'
+  push:
+    branches:
+      - 'develop'
 
 jobs:
   build:
@@ -18,4 +22,4 @@ jobs:
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
-           github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.COVERALLS_SECRET }}
