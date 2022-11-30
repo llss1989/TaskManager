@@ -1,4 +1,5 @@
 databases:
+    plan: free
   - name: task-manager-db
     databaseName: taskmanager_db_1
 
