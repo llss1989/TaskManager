@@ -3,6 +3,7 @@ databases:
     databaseName: taskmanager_db_1
 
 services:
+    plan: free
   - type: web
     name: mysite
     env: ruby
