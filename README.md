@@ -25,4 +25,4 @@ Things you may want to cover:
 
 
 [![Main](https://github.com/llss1989/taskmanager/actions/workflows/main.yml/badge.svg)](https://github.com/llss1989/taskmanager/actions/workflows/main.yml)
-[![Coverage Status](https://coveralls.io/repos/github/llss1989/taskmanager/badge.svg?branch=feature/develop)](https://coveralls.io/github/llss1989/taskmanager?branch=feature/develop)
+[![Coverage Status](https://coveralls.io/repos/github/llss1989/taskmanager/badge.svg?branch=develop)](https://coveralls.io/github/llss1989/taskmanager?branch=develop)
