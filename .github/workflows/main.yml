@@ -1,12 +1,8 @@
 name: Main
 
 on:
-  pull_request:
-    branches:
-      - 'develop'
-  push:
-    branches:
-      - 'develop'
+  - push
+  - pull_request
 
 jobs:
   build:
@@ -18,3 +14,8 @@ jobs:
           COVERAGE: true
           RAILS_ENV: test
         run: docker-compose --file docker-compose.ci.yml run ci
+      
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+           github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -2,7 +2,7 @@ class Api::V1::ApplicationController < Api::ApplicationController
   respond_to :json
   include AuthHelper
   helper_method :current_user
-  RANSACK_DEFAULT_SORT = 'id asc'
+  RANSACK_DEFAULT_SORT = 'id asc'.freeze
 
   def self.responder
     JsonResponder
