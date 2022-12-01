@@ -10,8 +10,6 @@ if ENV['COVERAGE']
 
     formatter SimpleCov::Formatter::LcovFormatter
   end
-
-  add_filter ['version.rb', 'initializer.rb']
 end
 
 ENV['RAILS_ENV'] ||= 'test'
