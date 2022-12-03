@@ -62,6 +62,7 @@ group :test do
   gem 'coveralls_reborn', '~> 0.25.0', require: false
   gem 'simplecov', require: false
   gem 'simplecov-lcov', '~> 0.8.0', require: false
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
