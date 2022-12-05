@@ -49,6 +49,7 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'bullet'
 end
 
 group :test do
@@ -61,6 +62,7 @@ group :test do
   gem 'coveralls_reborn', '~> 0.25.0', require: false
   gem 'simplecov', require: false
   gem 'simplecov-lcov', '~> 0.8.0', require: false
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
