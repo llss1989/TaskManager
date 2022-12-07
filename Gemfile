@@ -36,6 +36,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
 gem 'state_machines'
 gem 'state_machines-activerecord'
+gem 'rollbar'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -49,7 +51,6 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
-  gem 'rollbar'
 end
 
 group :test do
@@ -62,7 +63,6 @@ group :test do
   gem 'coveralls_reborn', '~> 0.25.0', require: false
   gem 'simplecov', require: false
   gem 'simplecov-lcov', '~> 0.8.0', require: false
-  gem 'rollbar'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
