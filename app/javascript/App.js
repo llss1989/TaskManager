@@ -7,7 +7,7 @@ import MUITheme from 'MUITheme/MUITheme';
 
 import { MuiThemeProvider } from '@material-ui/core';
 
-const App = () => {
+function App() {
   return (
     <Provider store={store}>
       <MuiThemeProvider theme={MUITheme}>
@@ -15,6 +15,6 @@ const App = () => {
       </MuiThemeProvider>
     </Provider>
   );
-};
+}
 
 export default App;

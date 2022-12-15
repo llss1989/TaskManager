@@ -1,3 +1,3 @@
-import UserSelect from "./UserSelect";
+import UserSelect from './UserSelect';
 
 export default UserSelect;
